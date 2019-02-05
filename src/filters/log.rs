@@ -139,7 +139,8 @@ impl<'a> Info<'a> {
         self.status
     }
 
-    fn elapsed(&self) -> Duration {
+    /// View the time it took for this request to be processed.
+    pub fn elapsed(&self) -> Duration {
         clock::now() - self.start
     }
 }

@@ -39,7 +39,7 @@ use hyper::Body;
 use serde;
 use serde_json;
 
-use never::Never;
+pub use never::Never;
 
 pub(crate) use self::sealed::{CombineRejection, Reject};
 

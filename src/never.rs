@@ -1,6 +1,9 @@
 use std::error::Error as StdError;
 use std::fmt;
 
+/// Rejection of a request by a [`Filter`](::Filter).
+///
+/// This rejection can never happen.
 #[derive(Debug)]
 pub enum Never {}
 
